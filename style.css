@@ -187,3 +187,41 @@ color: var(--bitcoin-orange);
     color: var(--grey);
     background-color: var(--just-white);
 }
+
+
+
+.currency-table--container .table__top-left {  /* Esquina de la tabla superior izquierda */
+    border-radius: 15px 0 0 0;
+
+}
+
+.currency-table--container .table__top-right { /* Esquina de la tabla superior derecha */
+    border-radius: 0 15px 0 0;
+}
+
+.currency-table--container .table__bottom-left { /* ESquina de la tabla inferior izquierda */
+    border-radius: 0 0 0 15px;
+}
+
+.currency-table--container .table__bottom-right { /* Esquina de la tabla inferior derecha
+     */
+    border-radius: 0 0 15px 0;
+}
+
+.currency-table--container .table__right {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+
+.currency-table--container .down {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url(./assets/icons/trending-down.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
