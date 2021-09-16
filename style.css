@@ -147,9 +147,10 @@ main {
 
 }
 
-/* Estilo para la tabla monedas */
+/* Estilo para la tabla monedas y comisiones */
 
-.main-currency-table {
+.main-currency-table, 
+.main-commission-table {
     width: 70%;
     min-width: 235px;
     max-width: 500px;
@@ -160,14 +161,24 @@ main {
 }
 
 .main-currency-table .currency-table--tittle {
-margin-bottom: 15px;
+margin-bottom:15px;
 font-size: 1.8rem;
 font-weight: bold;
 line-height: 2.3rem;
 color: var(--bitcoin-orange);
 }
 
-.currency-table--container {
+.main-commission-table .commission-table--tittle {
+    margin-bottom:15px;
+font-size: 1.8rem;
+font-weight: bold;
+line-height: 2.3rem;
+color:var(--secondary-blue)
+
+}
+
+.currency-table--container,
+.commission-table--container {
     width: 90%;
     min-width: 230px;
     max-width: 300px;
@@ -175,12 +186,14 @@ color: var(--bitcoin-orange);
     margin: 0 auto;
 }
 
-.currency-table--container table {
+.currency-table--container table ,
+.commission-table--container table {
     width: 100%;
     height: 100%;
 }
 
-.currency-table--container td {
+.currency-table--container td ,
+.commission-table--container td {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.9rem;
@@ -190,20 +203,24 @@ color: var(--bitcoin-orange);
 
 
 
-.currency-table--container .table__top-left {  /* Esquina de la tabla superior izquierda */
+.currency-table--container .table__top-left ,
+.commission-table--container .table__top-left {  /* Esquina de la tabla superior izquierda */
     border-radius: 15px 0 0 0;
 
 }
 
-.currency-table--container .table__top-right { /* Esquina de la tabla superior derecha */
+.currency-table--container .table__top-right ,
+.commission-table--container .table__top-right { /* Esquina de la tabla superior derecha */
     border-radius: 0 15px 0 0;
 }
 
-.currency-table--container .table__bottom-left { /* ESquina de la tabla inferior izquierda */
+.currency-table--container .table__bottom-left ,
+.commission-table--container .table__bottom-left { /* ESquina de la tabla inferior izquierda */
     border-radius: 0 0 0 15px;
 }
 
-.currency-table--container .table__bottom-right { /* Esquina de la tabla inferior derecha
+.currency-table--container .table__bottom-right ,
+.commission-table--container .table__bottom-right { /* Esquina de la tabla inferior derecha
      */
     border-radius: 0 0 15px 0;
 }
@@ -215,7 +232,7 @@ color: var(--bitcoin-orange);
     color: #757575;
 }
 
-.currency-table--container .down {
+.currency-table--container .down , .down-2 , .down-3{
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -225,3 +242,52 @@ color: var(--bitcoin-orange);
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.main-currency-table .up {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url(./assets/icons/trending-up.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no repeat;
+
+}
+
+/* Pie de tablas */
+
+.currency-table--date {
+    width: 190px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top:5px;
+    padding: 8px;
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+
+}
+
+
+.commission-table--date {
+    width: 190px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top:5px;
+    padding: 8px;
+    background-color: var(--soft-blue);
+    border-radius: 8px;
+
+}
+
+.currency-table--date p ,
+.commission-table--date p {
+
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+
+}
+
+
