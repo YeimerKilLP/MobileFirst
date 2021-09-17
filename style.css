@@ -486,7 +486,6 @@ color: var(--black);
 .plan-card--price span {
     font-size: 1.2rem;
     font-weight: 300;
-    
     position: relative;
     bottom: 30px;
 
