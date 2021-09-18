@@ -127,7 +127,23 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  
+  animation-name: rotation;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
+
+@keyframes rotation {
+  0% {
+    transform:rotate(0deg);
+  }
+  100% {
+    transform:rotate(360deg);
+  }
+}
+
+
 
 .main-exchange-container h2 {
   margin-bottom: 30px;
@@ -300,6 +316,19 @@ main {
   top: -10px;
   left: calc(50% - 20px);
   background-image: url(./assets/icons/batata.svg);
+  animation-name: rotation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .product-detail--tittle {
@@ -428,6 +457,14 @@ main {
   line-height: 1.8rem;
   color: #757575;
 }
+/* Scroll */
+.plan-container--slider {
+  display: flex;
+  height: 316px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
 
 /* Planes */
 
@@ -435,11 +472,12 @@ main {
 .plans-container--second,
 .plans-container--third {
   position: relative;
+  scroll-snap-align: center;
   width: 70%;
   min-width: 230px;
   max-width: 300px;
   height: 250px;
-  margin: 50px auto 0;
+  margin: 50px 15px 0;
   padding: 0 15px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
@@ -559,3 +597,5 @@ main {
   background-image: url(./assets/icons/orange-right-arrow.svg);
   vertical-align: text-bottom;
 }
+
+/* Scroll */
