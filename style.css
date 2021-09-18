@@ -127,23 +127,7 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
-  animation-name: rotation;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
 }
-
-@keyframes rotation {
-  0% {
-    transform:rotate(0deg);
-  }
-  100% {
-    transform:rotate(360deg);
-  }
-}
-
-
 
 .main-exchange-container h2 {
   margin-bottom: 30px;
@@ -321,16 +305,6 @@ main {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 .product-detail--tittle {
   width: 90%;
   min-width: 288px;
