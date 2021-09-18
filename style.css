@@ -440,6 +440,7 @@ color: var(--black);
 }
 
 /* Planes */
+
 .plans-container--card {
     position: relative;
     width: 70%;
